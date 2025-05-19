@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger(__name__)
 
 # Define paths from environment variables (cannot change existing env vars)
-DATA_PATH     = Path("/mnt/data") / os.environ.get("DOMINO_PROJECT_NAME", "") / "WineQualityData.csv"
+DATA_PATH     = Path("/mnt/data/Winequality-Workshop/WineQualityData.csv")
 ARTIFACTS_DIR = Path("/mnt/artifacts")
 MODEL_DIR     = Path("/mnt/code/models")
 

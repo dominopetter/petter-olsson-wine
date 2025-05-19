@@ -24,7 +24,7 @@ mlflow_set_experiment(
 )
 
 ## ─── Data Ingestion ───────────────────────────────────────────────────────────
-data_path  <- fs::path("/mnt/data", project_name, "WineQualityData.csv")
+data_path  <- fs::path("/mnt/data/Winequality-Workshop/WineQualityData.csv")
 message("Reading data from ", data_path)
 wine_data  <- read_csv(data_path, show_col_types = FALSE)
 
